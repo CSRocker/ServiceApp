@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.clarachen.services.StartDownload"
+    tools:showIn="@layout/activity_start_download">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txt_height"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="@dimen/label_width"
+            android:layout_height="@dimen/lable_height"
+            android:text="PDF File #1:"/>
+
+        <EditText
+            android:id="@+id/pdf1"
+            android:layout_width="@dimen/txtedit_width"
+            android:layout_height="@dimen/txtedit_height"
+            android:text="https://www.cisco.com/web/about/ac79/docs/innov/IoE.pdf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txt_height"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="@dimen/label_width"
+            android:layout_height="@dimen/lable_height"
+            android:text="PDF File #2:"/>
+
+        <EditText
+            android:id="@+id/pdf2"
+            android:layout_width="@dimen/txtedit_width"
+            android:layout_height="@dimen/txtedit_height"
+            android:text="http://www.cisco.com/web/about/ac79/docs/innov/IoE_Economy.pdf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txt_height"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout5">
+
+        <TextView
+            android:layout_width="@dimen/label_width"
+            android:layout_height="@dimen/lable_height"
+            android:text="PDF File #3:"/>
+
+        <EditText
+            android:id="@+id/pdf3"
+            android:layout_width="@dimen/txtedit_width"
+            android:layout_height="@dimen/txtedit_height"
+            android:text="http://www.cisco.com/web/strategy/docs/gov/everything-for-cities.pdf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txt_height"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/linearLayout6">
+
+        <TextView
+            android:layout_width="@dimen/label_width"
+            android:layout_height="@dimen/lable_height"
+            android:text="PDF File #4:"/>
+
+        <EditText
+            android:id="@+id/pdf4"
+            android:layout_width="@dimen/txtedit_width"
+            android:layout_height="@dimen/txtedit_height"
+            android:text="http://www.cisco.com/web/offer/gist_ty2_asset/Cisco_2014_ASR.pdf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/txt_height"
+        android:id="@+id/linearLayout4"
+        android:layout_below="@+id/linearLayout6"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:layout_width="@dimen/label_width"
+            android:layout_height="@dimen/lable_height"
+            android:text="PDF File #5:"/>
+
+        <EditText
+            android:id="@+id/pdf5"
+            android:layout_width="@dimen/txtedit_width"
+            android:layout_height="@dimen/txtedit_height"
+            android:text="http://www.cisco.com/web/offer/emear/38586/images/Presentations/P3.pdf"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/start_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:text="Start Download"
+        android:layout_marginBottom="132dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="startDownload"/>
+
+</RelativeLayout>
